@@ -5,3 +5,5 @@ blob-report/
 reports/
 playwright/.auth/
 .github/hooks/tool-use.log
+# Written by qamart-copilot-plugin/scripts/install.cjs with machine-specific paths
+.vscode/settings.json

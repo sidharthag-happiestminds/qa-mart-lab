@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "qamart-api": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${workspaceFolder}/qamart-copilot-plugin/mcp/qamart-api-server.cjs"]
+    }
+  }
+}

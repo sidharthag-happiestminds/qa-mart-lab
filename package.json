@@ -16,7 +16,14 @@
     "flaky": "playwright test --project=legacy --repeat-each=5",
     "codegen": "playwright codegen --output tests/lab/recorded.spec.ts http://localhost:3000/login",
     "demo:trace": "playwright test --project=demo --trace on",
-    "report": "playwright show-report"
+    "report": "playwright show-report",
+    "plugin:install": "node qamart-copilot-plugin/scripts/install.cjs",
+    "plugin:validate": "node qamart-copilot-plugin/scripts/validate-plugin.cjs",
+    "plugin:test-hooks": "node qamart-copilot-plugin/scripts/test-hooks.cjs",
+    "plugin:mcp-smoke": "node qamart-copilot-plugin/scripts/mcp-smoke.cjs",
+    "plugin:impact": "node qamart-copilot-plugin/skills/qa-regression-analyzer/impact-map.cjs",
+    "plugin:summary": "node qamart-copilot-plugin/hooks/post-execution.js --summary",
+    "plugin:check": "npm run plugin:validate && npm run plugin:test-hooks && npm run plugin:mcp-smoke"
   },
   "devDependencies": {
     "@playwright/test": "~1.64.0",

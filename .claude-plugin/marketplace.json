@@ -8,6 +8,11 @@
       "name": "playwright-qa-toolkit",
       "source": "./playwright-qa-toolkit",
       "description": "A minimal QA toolkit for reviewing Playwright tests and analyzing test failures."
+    },
+    {
+      "name": "qamart-copilot-plugin-sidharthag",
+      "source": "./qamart-copilot-plugin",
+      "description": "AI-native QA toolkit for QA Mart: instructions, prompts, skills, Test Generator and Review agents, QA Mart API and GitHub MCP servers, and guardrail hooks."
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "qamart-api": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${PLUGIN_ROOT}/mcp/qamart-api-server.cjs"]
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "X-MCP-Toolsets": "context,repos,issues,pull_requests",
+        "X-MCP-Readonly": "true"
+      }
+    }
+  }
+}

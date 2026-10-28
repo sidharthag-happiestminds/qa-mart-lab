@@ -8,6 +8,7 @@
     }
   },
   "enabledPlugins": {
-    "playwright-qa-toolkit@qa-mart-lab": true
+    "playwright-qa-toolkit@qa-mart-lab": true,
+    "qamart-copilot-plugin-sidharthag@qa-mart-lab": true
   }
 }

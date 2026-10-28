@@ -19,6 +19,9 @@ npm test
 
 For the Copilot playground, continue with [exercises/00-start-here.md](exercises/00-start-here.md).
 
+## Copilot Agent Plugin
+The installable capstone plugin, displayed as **qamart-copilot-plugin-sidharthag**, is in [qamart-copilot-plugin/](qamart-copilot-plugin/README.md). If VS Code is opened at the parent `qamart` folder, run `npm run plugin:install -- --workspace ..`; if it is opened directly at `qa-mart-lab`, run `npm run plugin:install`. Then reload VS Code. See [the plugin README](qamart-copilot-plugin/README.md), [recorded demo](qamart-copilot-plugin/demo/DEMO.md), and run `npm run plugin:check` to validate the package, hooks and MCP server.
+
 ## 2. Look around the app
 ```bash
 npm start
@@ -42,6 +45,9 @@ Use the footer links to switch between the v1 design and the v2 redesign. The ap
 | `npm run mcp:smoke` | Starts the app on port 3199 (`SMOKE_PORT` to change it) and drives the trainer MCP server over stdio |
 | `npm run report` | Opens the last HTML report |
 | `npm run demo:trace` | Trainer demo: one failing test with a full trace |
+| `npm run plugin:install` | Validates and registers the Copilot Agent Plugin in this workspace |
+| `npm run plugin:check` | Validates the plugin, hook guardrails and MCP server |
+| `npm run plugin:impact -- --base origin/main` | Analyze changed files and recommend regression suites |
 
 ## Folders
 - `app/`: the QA Mart app (do not edit during the lab)

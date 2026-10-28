@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "qamart-copilot-plugin-sidharthag",
+  "version": "1.0.0",
+  "description": "AI-native QA toolkit for QA Mart: house-rule instructions, generate/review prompts, test-generation and regression-analysis skills, Test Generator and Review agents, QA Mart API and GitHub MCP servers, and guardrail hooks.",
+  "author": { "name": "QA Mart QA Automation" },
+  "repository": "https://github.com/happiestmindslabsu2/qa-mart-lab",
+  "license": "MIT",
+  "keywords": ["qa", "playwright", "typescript", "testing", "mcp", "github-copilot", "qamart"],
+  "extensions": {
+    "com.github.copilot": {
+      "commands": { "paths": ["commands"], "exclusive": true },
+      "agents": { "paths": ["agents"], "exclusive": true },
+      "rules": { "paths": ["rules"], "exclusive": true }
+    }
+  }
+}
